@@ -1,0 +1,53 @@
+.appSpan{
+    width: 100%;
+    height: 10rem;
+    font-size: 40rem;
+    color: cornflowerblue;
+    text-align: left;
+    padding-left: 5rem;
+    line-height: 10rem;
+}
+.iconSetting{
+    padding-left: 1rem;
+}
+.application{
+    height: 70%;
+    margin: 0 3rem;
+}
+.appFrom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.leaveReason{
+    color: cornflowerblue;
+    width: 80%;
+    height: 20rem;
+    border: 0;
+    padding: 1rem;
+    font-size: 20rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+.appFrom input{
+    color: cornflowerblue;
+    margin-top: 2rem;
+    width: 80%;
+    height: 5rem;
+    border: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.appFrom> button{
+    border: 0;
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+    margin-top: 2rem;
+    font-size: 20rem;
+    color: white;
+    background: rgba(92,172,238,0.6);
+}

@@ -6,18 +6,55 @@
     <link rel="stylesheet" href="../../css/mainPage/main.css">
     <link rel="stylesheet" href="../../css/mainPage/mainNav.css">
     <link rel="stylesheet" href="../../css/mainPage/mainWrapper.css">
+    <link rel="stylesheet" href="../../css/mainPage/wrapperOne.css">
+    <link rel="stylesheet" href="../../css/mainPage/info.css">
+    <link rel="stylesheet" href="../../css/font/demo.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <style>
+        *{
+            font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+        }
+    </style>
+
 </head>
 <body>
 <nav>
     <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+        <li><a id="navOne" href="#">1</a></li>
+        <li><a id="navTwo" href="#">2</a></li>
+        <li><a id="navThree" href="#">3</a></li>
     </ul>
 </nav>
-<div class="wrapper">
-
+<div class="flex">
+    <div class="wrapper">
+        <div class="wrapperOne">
+            <span class="appSpan">申请表单<span class="iconfont iconSetting">&#xe656;</span></span>
+            <div class="application">
+                <form class="appFrom">
+                    <textarea  placeholder="出校原因" class="leaveReason"></textarea>
+                    <input type="text" placeholder="目的地">
+                    <input type="text" placeholder="时间段">
+                    <button>提  交</button>
+                </form>
+            </div>
+        </div>
+        <div class="wrapperTwo"></div>
+        <div class="wrapperThree"></div>
+    </div>
+    <div class="information">
+        <div class="header">
+            <img class="headerImg" src="../../static/img/mainPage/header.png">
+            <div class="infoImg"><img  src="../../static/img/mainPage/right.png"></div>
+        </div>
+        <div class="person">
+            <span>姓 名: 瑞秋</span>
+            <span>学 号: 15080209  </span>
+            <span>状 态： right</span>
+        </div>
+    </div>
 </div>
 <script src="../../plugins-dev/jquery-3.3.1.min.js"></script>
+<script src="../../js/mainPage/nav.js"></script>
+<script src="../../css/font/iconfont.js"></script>
 </body>
 </html>

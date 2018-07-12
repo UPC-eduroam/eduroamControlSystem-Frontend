@@ -1,0 +1,51 @@
+.information{
+    width: 35rem;
+    height: 30rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 3rem;
+    margin-left: -5rem;
+    text-align: center;
+}
+.header{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.headerImg{
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.infoImg{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.infoImg img{
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    width: 50%;
+    height: 50%;
+}
+.person{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: left;
+}
+.person span{
+    display: block;
+    width: 70%;
+    height: 5rem;
+    font-size: 30rem;
+    color: cornflowerblue;
+    text-align: left;
+}
