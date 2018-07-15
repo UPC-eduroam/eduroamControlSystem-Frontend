@@ -2,59 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Main</title>
-    <link rel="stylesheet" href="../../css/mainPage/main.css">
-    <link rel="stylesheet" href="../../css/mainPage/mainNav.css">
-    <link rel="stylesheet" href="../../css/mainPage/mainWrapper.css">
-    <link rel="stylesheet" href="../../css/mainPage/wrapperOne.css">
-    <link rel="stylesheet" href="../../css/mainPage/info.css">
-    <link rel="stylesheet" href="../../css/font/demo.css">
-    <link rel="stylesheet" href="../../css/font/iconfont.css">
-    <style>
-        *{
-            font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/mainPage/index.css">
+    <link rel="stylesheet" href="../../css/mainPage/boot.css">
 
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a id="navOne" href="#">1</a></li>
-        <li><a id="navTwo" href="#">2</a></li>
-        <li><a id="navThree" href="#">3</a></li>
-    </ul>
+<nav class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eduroam</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li id="submit" class="active"><a href="#">提交申请</a></li>
+                <li id="blackName"><a href="#">查看黑名单/申请</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
-<div class="flex">
-    <div class="wrapper">
-        <div class="wrapperOne">
-            <span class="appSpan">申请表单<span class="iconfont iconSetting">&#xe656;</span></span>
-            <div class="application">
-                <form class="appFrom">
-                    <textarea  placeholder="出校原因" class="leaveReason"></textarea>
-                    <input type="text" placeholder="目的地">
-                    <input type="text" placeholder="时间段">
-                    <button>提  交</button>
-                </form>
+<div class="container">
+    <div class="row info dis">
+        <div class="col-lg-4 person">
+            <div class="thumbnail">
+                <img src="../../static/img/mainPage/header.jpg"
+                     alt="eduroam">
+                <div class="caption">
+                    <h3>杜文杰</h3>
+                    <p>计算机与通信学院</p>
+                    <p>
+                        学号： 1507010101
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="wrapperTwo"></div>
-        <div class="wrapperThree"></div>
-    </div>
-    <div class="information">
-        <div class="header">
-            <img class="headerImg" src="../../static/img/mainPage/header.png">
-            <div class="infoImg"><img  src="../../static/img/mainPage/right.png"></div>
+        <div class="col-lg-8 subForm">
+            <form role="form">
+                <div class="form-group">
+                    <label for="reason">出校理由</label>
+                    <textarea id="reason" class="form-control" style="height: 10rem"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="time">时间长度</label>
+                    <input id="time" class="form-control" type="text" placeholder="XXXX-XX-XX ———— XXXX-XX-XX">
+                </div>
+                <div class="form-group">
+                    <label for="tip">备注</label>
+                    <input id="tip" class="form-control" type="text" placeholder="备注">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-h">提交</button>
+            </form>
+
         </div>
-        <div class="person">
-            <span>姓 名: 瑞秋</span>
-            <span>学 号: 15080209  </span>
-            <span>状 态： right</span>
+    </div>
+    <div class="row blackList ">
+        <div class="row">
+            <table class="table table-bordered">
+                <caption>黑名单</caption>
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>学号</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Tanmay</td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr>
+                    <td>150702009</td>
+                    <td>150702009</td>
+                </tr>
+                <tr>
+                    <td>150702009</td>
+                    <td>150702009</td>
+                </tr>
+                <tr>
+                    <td>150702009</td>
+                    <td>150702009</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row blackRow">
+            <ul></ul>
         </div>
     </div>
 </div>
+<footer style="position: fixed; left: 0; bottom: 0;right: 0; height: 10px;text-align: right;line-height: 10px;"><p>made by pushmyandy 7/2018</p></footer>
 <script src="../../plugins-dev/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../js/mainPage/nav.js"></script>
-<script src="../../css/font/iconfont.js"></script>
 </body>
 </html>

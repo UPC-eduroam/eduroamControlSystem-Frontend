@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  font-size: 10%;
+}
+body {
+  background: url("../../static/img/mainPage/Sky.jpg");
+}
+.info {
+  height: 41rem;
+}
+.subForm {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  font-size: 10rem;
+}
+.subForm .btn-h {
+  margin-top: 0.5rem;
+}
+.dis {
+  display: none;
+}
+.blackList {
+  background: rgba(32, 189, 255, 0.2);
+  padding: 2rem;
+  font-size: 10rem;
+}
+.blackList caption {
+  font-size: 15rem;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
