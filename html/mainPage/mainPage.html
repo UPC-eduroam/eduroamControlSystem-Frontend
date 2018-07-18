@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/mainPage/index.css">
     <link rel="stylesheet" href="../../css/mainPage/boot.css">
 
+
 </head>
 <body>
 <nav class="navbar navbar-default " role="navigation">
@@ -52,8 +53,8 @@
                     <textarea id="reason" class="form-control" style="height: 10rem"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="time">时间长度</label>
-                    <input id="time" class="form-control" type="text" placeholder="XXXX-XX-XX ———— XXXX-XX-XX">
+                    <label for="time">截止时间</label>
+                    <input id="time" class="form-control" type="date" placeholder="XXXX-XX-XX ———— XXXX-XX-XX">
                 </div>
                 <div class="form-group">
                     <label for="tip">备注</label>
@@ -66,36 +67,46 @@
     </div>
     <div class="row blackList ">
         <div class="row">
-            <table class="table table-bordered">
+            <table class="table table-bordered blackTable">
                 <caption>黑名单</caption>
                 <thead>
                 <tr>
                     <th>姓名</th>
                     <th>学号</th>
+                    <th>查看</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody >
+                <tr >
                     <td>Tanmay</td>
-                    <td>Bangalore</td>
+                    <td class="blackNum">1508020109</td>
+                    <td ><button class="btn btn-danger" id="Tanmay">查看详情</button></td>
                 </tr>
                 <tr>
+                    <td>Array</td>
                     <td>150702009</td>
-                    <td>150702009</td>
+                    <td ><button class="btn btn-danger" id="Array">查看详情</button></td>
                 </tr>
                 <tr>
+                    <td>Less</td>
                     <td>150702009</td>
-                    <td>150702009</td>
+                    <td ><button class="btn btn-danger" id="Less">查看详情</button></td>
                 </tr>
                 <tr>
+                    <td>John</td>
                     <td>150702009</td>
-                    <td>150702009</td>
+                    <td ><button class="btn btn-danger" id="John">查看详情</button></td>
                 </tr>
                 </tbody>
             </table>
         </div>
-        <div class="row blackRow">
-            <ul></ul>
+        <div class="row blackDetail dis">
+            <ul>
+                <li>申请人: XXX</li>
+                <li>出校时间：XXXXX</li>
+                <li>理由XXXXXXXX</li>
+            </ul>
+            <button class="btn btn-warning btn-lg pull-right btnArgree">同意</button>
         </div>
     </div>
 </div>
@@ -103,5 +114,6 @@
 <script src="../../plugins-dev/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../js/mainPage/nav.js"></script>
+<script src="../../js/mainPage/main.js"></script>
 </body>
 </html>

@@ -30,4 +30,19 @@ body {
   font-size: 15rem;
   color: white;
 }
+.blackInfo {
+  text-decoration: none;
+  cursor: pointer;
+}
+.blackDetail {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  font-size: 15rem;
+}
+.blackDetail ul {
+  list-style: none;
+}
+.blackDetail ul li {
+  margin: 0.5rem;
+}
 /*# sourceMappingURL=index.css.map */
