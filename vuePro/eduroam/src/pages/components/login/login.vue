@@ -1,19 +1,16 @@
 <template>
   <div class="login">
     <div class="loginFrame">
-      <el-form  label-position="left" label-width="60px">
-        <el-tabs  class = "users" @tab-click="handleTabClick">
-          <el-tab-pane label = "学生" name = "students">学生</el-tab-pane>
-          <el-tab-pane label = "管理员" name = "teacher">管理员</el-tab-pane>
-        </el-tabs>
+      <el-form  label-position="left" label-width="60px" :model="person" ref="person">
         <el-form-item label="用户名">
-          <el-input v-model="username" type = "text" auto-complete = "off" placeholder = "请输入您的账号"></el-input>
+          <el-input v-model="person.username" ref="username" type = "text" auto-complete = "off" ></el-input>
         </el-form-item>
         <el-form-item label="密码" >
-          <el-input v-model="password" type = "password"  auto-complete = "off" placeholder = "请输入密码"></el-input>
+          <el-input v-model="person.password" ref="password" type = "password"  auto-complete = "off" ></el-input>
         </el-form-item>
         <el-form-item >
-          <el-button @click="submit" type = "primary">登录</el-button>
+          <el-button @click="submitForm()" type = "primary">登录</el-button>
+          <el-button @click="resetForm('person')">重置</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -21,32 +18,53 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { mapState, mapMutations } from 'vuex'
+
 export default {
   name: 'login',
   data () {
     return {
-      identity: '',
-      username: '',
-      password: ''
+      person: {
+        username: '',
+        password: ''
+      }
     }
   },
+  computed: {
+    ...mapState(['data'])
+  },
   methods: {
-    handleTabClick: (tab, e) => {
-      this.identity = e.target.getAttribute('id')
-    },
-    submit: () => {
-      axios({
-        method: 'get',
-        url: '',
-        data:{
-         username: this.username,
-         pssword: this.pssword
+    submitForm() {
+      const person = this.person
+      this.$http.post('http://182.254.133.79:8081/user/login',{
+        username: person.username,
+        password: person.password
+      }, {emulateJSON:true} ).then((res)=>{
+        const respond = res.data
+        localStorage.setItem( "token",respond.token)
+        this.isLogin(respond.user)
+        if(this.data.userId === 'devUser') {
+          this.$router.push({
+            path: '/home/student'
+          })
+        } else {
+          this.$router.push({
+            path: '/home/teacher'
+          })
         }
-      }).then(this.handleData)
+      }, (e)=>{
+        person.password=''
+        person.username=''
+        console.log(e)
+      })
     },
-    handleData (res) {
-    }
+    resetForm(formName) {
+      this.person= {}
+      this.$refs[formName].resetFields();
+    },
+    ...mapMutations({
+      isLogin: 'isLogin'
+    }),
   }
 }
 </script>
@@ -63,7 +81,7 @@ export default {
       width 500px
       height 300px
       box-sizing border-box
-      padding 20px
+      padding 40px
       margin 200px auto 0 auto
       background rgba(255,255,255,0.8)
       .users

@@ -5,22 +5,22 @@
         <el-row  style="width: 80%; margin: 0 auto; padding: 20px">
           <el-col :span="24" >
             <el-table class="blackForm" :data="table">
-              <el-table-column
-                label="学号"
-                prop="number"
-              ></el-table-column>
-              <el-table-column
-                label="姓名"
-                prop="name"
-              ></el-table-column>
-              <el-table-column label="操作">
-                <template  slot-scope="scope">
-                  <el-button
-                    size="mini" @click="check(scope.row)"
-                    >编辑</el-button>
-                </template>
-              </el-table-column>
-            </el-table>
+            <el-table-column
+              label="学号"
+              prop="number"
+            ></el-table-column>
+            <el-table-column
+              label="姓名"
+              prop="name"
+            ></el-table-column>
+            <el-table-column label="操作">
+              <template  slot-scope="scope">
+                <el-button
+                  size="mini" @click="check(scope.row)"
+                >编辑</el-button>
+              </template>
+            </el-table-column>
+          </el-table>
           </el-col>
         </el-row>
         <el-row style="width: 80%; margin: 0 auto; padding: 20px">
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "teacher",
+  name: 'teacher',
   data () {
     return {
       table: [

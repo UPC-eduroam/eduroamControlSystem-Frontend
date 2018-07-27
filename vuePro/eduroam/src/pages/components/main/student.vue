@@ -8,7 +8,7 @@
               <img src="./imgs/header.jpg">
               <ul class="perInfo">
                 <li class="intro">欢迎使用eduroam</li>
-                <li>姓名: {{name}}</li>
+                <li>姓名: {{getName}}</li>
                 <li>登入时间: {{time}}</li>
               </ul>
             </div>
@@ -21,7 +21,7 @@
           <el-col :span="20">
             <el-form ref="form" :model="form" label-width="80px" class="reason">
               <el-form-item label="外出理由">
-                <el-input v-model="form.name"></el-input>
+                <el-input v-model="form.reason"></el-input>
               </el-form-item>
               <el-form-item label="外出时间">
                 <el-col :span="11" class="begin">
@@ -48,13 +48,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: "student",
+  name: 'student',
   data () {
     return {
-      name: '',
       form: {
-        name: '',
+        reason: '',
         beginTime: '',
         endTime: '',
         desc: ''
@@ -69,14 +69,20 @@ export default {
       let date = time.getDate().toString();
       let month = time.getMonth().toString();
       return year+"--"+(Number(month)+1).toString()+"--"+date
-    }
+    },
+    getName () {
+      return this.data.userId
+    },
+    ...mapState(['data'])
   },
   methods: {
     submit () {
       this.situation = '已提交';
+      console.log(this.form)
     },
     reform () {
       this.situation = '未提交';
+      this.form={}
     }
   }
 }

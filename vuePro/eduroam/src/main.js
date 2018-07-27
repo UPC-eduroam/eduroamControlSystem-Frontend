@@ -6,15 +6,40 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '../static/css/reset.css'
-
+import store from './store'
+import Resource from 'vue-resource'
 
 Vue.use(Element)
+Vue.use(Resource)
 Vue.config.productionTip = false
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requireAuth) {
+    if(!isEmptyObject(store.state.data)) {
+      next()
+    } else {
+      next({
+        path: '/',
+        query: {redirect: to.fullPath}
+      })
+    }
+  }else {
+    next()
+  }
+})
+
+function isEmptyObject(obj) {
+  for(let key in obj) {
+    return false
+  }
+  return true
+}
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
