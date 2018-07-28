@@ -1,58 +1,80 @@
 <template>
-  <div class="teacher">
-    <el-container>
-      <el-main>
-        <el-row  style="width: 80%; margin: 0 auto; padding: 20px">
-          <el-col :span="24" >
-            <el-table class="blackForm" :data="table">
-            <el-table-column
-              label="学号"
-              prop="number"
-            ></el-table-column>
-            <el-table-column
-              label="姓名"
-              prop="name"
-            ></el-table-column>
-            <el-table-column label="操作">
-              <template  slot-scope="scope">
-                <el-button
-                  size="mini" @click="check(scope.row)"
-                >编辑</el-button>
-              </template>
-            </el-table-column>
-          </el-table>
-          </el-col>
-        </el-row>
-        <el-row style="width: 80%; margin: 0 auto; padding: 20px">
-          <el-col :span="24">
-            <div class="detail">
-              <span class="chosen">123445</span>
-              <textarea class="chosenText"></textarea>
-              <el-button type="primary" size="medium" class="btn">同意</el-button>
-            </div>
-          </el-col>
-        </el-row>
+  <div class="teacher" style="height: 100%; width: 100%">
+    <el-container style="height: 100%; width: 100%">
+      <el-header style="margin: 0; padding: 0">
+        <el-menu
+          :default-active="activeIndex2"
+          class="el-menu-demo"
+          mode="horizontal"
+          @select="handleSelect"
+          background-color="#545c64"
+          text-color="#fff"
+          active-text-color="#ffd04b">
+          <el-menu-item index="1">查看消息</el-menu-item>
+          <el-menu-item index="2">变更模式</el-menu-item>
+          <el-menu-item index="3">编辑名单</el-menu-item>
+        </el-menu>
+      </el-header>
+      <el-main style="height: 100%; width: 100%">
+        <router-view></router-view>
       </el-main>
     </el-container>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
+axios.interceptors.request.use(config => { // 设置监听器给加上请求头
+  let token = localStorage.getItem('token')
+  if (token) {
+    config.headers.Authorization = token
+  }
+  return config
+}, error => {
+  return Promise.reject(error)
+})
+
 export default {
   name: 'teacher',
   data () {
     return {
-      table: [
-        {
-          name: '杜文杰',
-          number: '15151515151'
-        }
-      ]
+      activeIndex: '1',
+      activeIndex2: '1'
     }
   },
+  created () {
+    setInterval(function () {
+      axios.get('http://182.254.133.79:8081/token/refresh').then(res => {
+        const newToken = res.data
+        localStorage.setItem('token', newToken)
+        console.log('refresh over')
+      }).catch(e => {
+        console.log(e)
+      })
+    }, 600000)
+  },
   methods: {
-    check (row) {
-      console.log(row.name)
+    handleSelect (key) {
+      if (key === '1') {
+        this.$router.push(
+          {
+            path: '/home/teacher/read'
+          }
+        )
+      } else if (key === '2') {
+        this.$router.push(
+          {
+            path: '/home/teacher/toggle'
+          }
+        )
+      } else if (key === '3') {
+        this.$router.push(
+          {
+            path: '/home/teacher/watch'
+          }
+        )
+      }
     }
   }
 }

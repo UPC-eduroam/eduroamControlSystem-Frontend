@@ -1,5 +1,5 @@
 export default {
-  isLogin( state, data) {
+  isLogin (state, data) {
     state.data = data
   }
 }

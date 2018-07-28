@@ -34,16 +34,17 @@ export default {
     ...mapState(['data'])
   },
   methods: {
-    submitForm() {
+    submitForm () {
       const person = this.person
-      this.$http.post('http://182.254.133.79:8081/user/login',{
+      this.$http.post('http://182.254.133.79:8081/user/login', {
         username: person.username,
         password: person.password
-      }, {emulateJSON:true} ).then((res)=>{
+      }, { emulateJSON: true }).then((res) => {
         const respond = res.data
-        localStorage.setItem( "token",respond.token)
+        localStorage.setItem('token', respond.token)
+        localStorage.setItem('userId', respond.user.userId)
         this.isLogin(respond.user)
-        if(this.data.userId === 'devUser') {
+        if (this.data.userId === 'devUser') {
           this.$router.push({
             path: '/home/student'
           })
@@ -52,19 +53,19 @@ export default {
             path: '/home/teacher'
           })
         }
-      }, (e)=>{
-        person.password=''
-        person.username=''
+      }, (e) => {
+        person.password = ''
+        person.username = ''
         console.log(e)
       })
     },
-    resetForm(formName) {
-      this.person= {}
-      this.$refs[formName].resetFields();
+    resetForm (formName) {
+      this.person = {}
+      this.$refs[formName].resetFields()
     },
     ...mapMutations({
       isLogin: 'isLogin'
-    }),
+    })
   }
 }
 </script>

@@ -49,6 +49,18 @@
 
 <script>
 import { mapState } from 'vuex'
+import axios from 'axios'
+
+axios.interceptors.request.use(config => { // 设置监听器给加上请求头
+  let token = localStorage.getItem('token')
+  if(token) {
+    config.headers.Authorization = token
+  }
+  return config
+}, error => {
+  return Promise.reject(error)
+})
+
 export default {
   name: 'student',
   data () {
@@ -62,16 +74,35 @@ export default {
       situation: '未提交',
     }
   },
+  created () {
+    setInterval(function () {
+      axios.get('http://182.254.133.79:8081/token/refresh').then(res => {
+        const newToken = res.data
+        localStorage.setItem('token',newToken)
+        console.log('refresh over')
+      }).catch(e => {
+        console.log(e)
+      })
+      // _this.$http.get('http://182.254.133.79:8081/token/refresh', {
+      //   headers: {
+      //     'Authorization': token
+      //   }
+      // }).then((res) => {
+      //   console.log(res)
+      // })
+    }, 600000)
+  },
   computed: {
     time () {
       let time = new Date()
-      let year = time.getFullYear().toString();
-      let date = time.getDate().toString();
-      let month = time.getMonth().toString();
-      return year+"--"+(Number(month)+1).toString()+"--"+date
+      let year = time.getFullYear().toString()
+      let date = time.getDate().toString()
+      let month = time.getMonth().toString()
+      return year + '--' + (Number(month) + 1).toString() + '--' + date
     },
     getName () {
-      return this.data.userId
+      const userId = localStorage.getItem('userId')
+      return userId
     },
     ...mapState(['data'])
   },
@@ -82,7 +113,7 @@ export default {
     },
     reform () {
       this.situation = '未提交';
-      this.form={}
+      this.form = {}
     }
   }
 }
@@ -117,7 +148,7 @@ export default {
       li
         margin 10px 0
   .tip
-    margin-left 20px
+    margin-left 45px
     display block
     width 100%
     height 300px
@@ -136,6 +167,7 @@ export default {
       height auto
       padding 20px
       background rgba(255, 255, 255, 0.2)
+      box-sizing border-box
       .begin
         margin-right 40px
 </style>
