@@ -16,11 +16,6 @@
         width="400">
       </el-table-column>
       <el-table-column
-        prop="situation"
-        label="状态"
-        width="300">
-      </el-table-column>
-      <el-table-column
         label="操作"
         width="215">
         <template slot-scope="scope">
@@ -32,28 +27,43 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'watchList',
   data () {
     return {
       tableData: [{
-        number: '1507020109',
-        name: '杜文杰',
-        situation: '黑名单'
-      }, {
-        number: '1507020122',
-        name: '杜文杰',
-        situation: '黑名单'
-      }, {
-        number: '1507020122',
-        name: '杜文杰',
-        situation: '黑名单'
-      }, {
-        number: '1507020122',
-        name: '杜文杰',
-        situation: '黑名单'
+        number: 1,
+        name: 'john'
       }],
-      mode: '移入白名单'
+      mode: '移出黑名单'
+    }
+  },
+  mounted () {
+    this.init()
+  },
+  methods: {
+    init () {
+      const token = localStorage.getItem('token')
+      const userId = localStorage.getItem('userId')
+      axios.get('http://182.254.133.79:8081/BlackListController/GetAllUsersFromBlacklist', {
+        params: {
+          Authorization: token,
+          userId: userId
+        }
+      }).then(res => {
+        // this.tableData = res.data
+      })
+    },
+    handleClick (data) {
+      axios.post('http://182.254.133.79:8081/BlackListController/DeleteUserFromBlackList', {
+        token: localStorage.getItem('token'),
+        userId: localStorage.getItem('userId'),
+        objectId: data.number
+      }).then(res => {
+        this.init()
+        console.log(res)
+      })
     }
   }
 }

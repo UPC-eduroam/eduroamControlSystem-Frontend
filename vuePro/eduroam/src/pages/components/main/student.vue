@@ -78,7 +78,7 @@ export default {
     setInterval(function () {
       axios.get('http://182.254.133.79:8081/token/refresh').then(res => {
         const newToken = res.data
-        localStorage.setItem('token',newToken)
+        localStorage.setItem('token', newToken)
         console.log('refresh over')
       }).catch(e => {
         console.log(e)

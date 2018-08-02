@@ -13,6 +13,11 @@
           <el-menu-item index="1">查看消息</el-menu-item>
           <el-menu-item index="2">变更模式</el-menu-item>
           <el-menu-item index="3">编辑名单</el-menu-item>
+          <el-submenu index="4" style="float: right">
+            <template slot="title">欢迎, {{getAdmin}}</template>
+            <el-menu-item index="4-1">操作记录</el-menu-item>
+            <el-menu-item index="4-2">登出</el-menu-item>
+          </el-submenu>
         </el-menu>
       </el-header>
       <el-main style="height: 100%; width: 100%">
@@ -54,6 +59,11 @@ export default {
       })
     }, 600000)
   },
+  computed: {
+    getAdmin () {
+      return localStorage.getItem('userId')
+    }
+  },
   methods: {
     handleSelect (key) {
       if (key === '1') {
@@ -72,6 +82,18 @@ export default {
         this.$router.push(
           {
             path: '/home/teacher/watch'
+          }
+        )
+      } else if (key === '4-2') {
+        this.$router.push(
+          {
+            path: '/'
+          }
+        )
+      } else if (key === '4-1') {
+        this.$router.push(
+          {
+            path: '/home/teacher/operation'
           }
         )
       }
