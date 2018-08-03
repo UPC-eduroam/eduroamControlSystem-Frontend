@@ -48,21 +48,27 @@ export default {
       const userId = localStorage.getItem('userId')
       axios.get('http://182.254.133.79:8081/BlackListController/GetAllUsersFromBlacklist', {
         params: {
-          Authorization: token,
           userId: userId
+        },
+        headers: {
+          Authorization: token,
         }
       }).then(res => {
-        // this.tableData = res.data
+        console.log(res.data)
+        this.tableData = res.data
       })
     },
     handleClick (data) {
       axios.post('http://182.254.133.79:8081/BlackListController/DeleteUserFromBlackList', {
-        token: localStorage.getItem('token'),
         userId: localStorage.getItem('userId'),
         objectId: data.number
+      }, {
+        headers: {
+          Authorization: localStorage.getItem('token')
+        }
       }).then(res => {
-        this.init()
         console.log(res)
+        this.init()
       })
     }
   }

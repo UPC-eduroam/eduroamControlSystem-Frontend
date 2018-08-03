@@ -1,8 +1,21 @@
 <template>
     <div class="operation">
       <el-row :gutter="20">
-        <el-col :span="20">
+        <el-col :span="4">
           <el-input v-model="findId" placeholder="输入要查找的ID" prefix-icon="el-icon-search"></el-input>
+        </el-col>
+        <el-col :span="4">
+          <el-date-picker
+            v-model="beginTime"
+            type="date"
+            placeholder="选择开始日期"></el-date-picker>
+        </el-col>
+        <el-col :span="4" style="margin: 0 50px">
+          <el-date-picker
+            v-model="endTime"
+            type="date"
+            placeholder="选择结束日期"
+            ></el-date-picker>
         </el-col>
         <el-col :span="4"><el-button type="primary" @click="findAdmin">查找</el-button></el-col>
       </el-row>
@@ -34,7 +47,9 @@ export default {
   data () {
     return {
       findId: '',
-      data: []
+      data: [],
+      beginTime: '',
+      endTime: ''
     }
   },
   methods: {
@@ -42,19 +57,35 @@ export default {
       const token = localStorage.getItem('token')
       const findId = this.findId
       const currentId = localStorage.getItem('userId')
-      axios.get('http://182.254.133.79:8081/AdminOperationLogController/GetAllAdminOperationLogsByAdminId',
+      const beginTime = this.beginTime
+      const endTime = this.endTime
+      const finalEnd = endTime.getFullYear() + '-' +this.dealDate(endTime.getMonth()+1) + '-' + this.dealDate(endTime.getDate())
+      const finalBegin = beginTime.getFullYear() + '-' +this.dealDate(beginTime.getMonth()+1) + '-' + this.dealDate(beginTime.getDate())
+      axios.get('http://182.254.133.79:8081/AdminOperationLogController/GetAdminOperationLogsByAdminIdAndDate',
         {
           params: {
-            Authorization: token,
             userId: currentId,
-            objectId: findId
+            objectId: findId,
+            startDate: finalBegin,
+            endDate: finalEnd
+          },
+          headers: {
+            Authorization: token
           }
         }
       ).then(res => {
         this.data = res.data
-      }).catch(e => [
+        console.log(this.data)
+      }).catch(e => {
         console.log(e)
-      ])
+      })
+    },
+    dealDate (num) {
+      if (Number(num) > 10) {
+        return num
+      } else {
+        return '0' + num
+      }
     }
   }
 }
