@@ -11,7 +11,7 @@
           text-color="#fff"
           active-text-color="#ffd04b">
           <el-menu-item index="1">查看消息</el-menu-item>
-          <el-menu-item index="2">编辑名单</el-menu-item>
+          <el-menu-item index="2">编辑可疑名单</el-menu-item>
           <el-submenu index="3" style="float: right">
             <template slot="title">欢迎, {{getAdmin}}</template>
             <el-menu-item index="3-1">操作记录</el-menu-item>

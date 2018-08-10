@@ -16,6 +16,11 @@
         width="400">
       </el-table-column>
       <el-table-column
+        prop="situation"
+        label="状态"
+        width="400">
+      </el-table-column>
+      <el-table-column
         label="操作"
         width="215">
         <template slot-scope="scope">
@@ -34,9 +39,10 @@ export default {
     return {
       tableData: [{
         number: 1,
-        name: 'john'
+        name: 'john',
+        situation: '异地登录'
       }],
-      mode: '移出黑名单'
+      mode: '移入黑名单'
     }
   },
   mounted () {
