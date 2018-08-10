@@ -11,12 +11,11 @@
           text-color="#fff"
           active-text-color="#ffd04b">
           <el-menu-item index="1">查看消息</el-menu-item>
-          <el-menu-item index="2">变更模式</el-menu-item>
-          <el-menu-item index="3">编辑名单</el-menu-item>
-          <el-submenu index="4" style="float: right">
+          <el-menu-item index="2">编辑名单</el-menu-item>
+          <el-submenu index="3" style="float: right">
             <template slot="title">欢迎, {{getAdmin}}</template>
-            <el-menu-item index="4-1">操作记录</el-menu-item>
-            <el-menu-item index="4-2">登出</el-menu-item>
+            <el-menu-item index="3-1">操作记录</el-menu-item>
+            <el-menu-item index="3-2">登出</el-menu-item>
           </el-submenu>
         </el-menu>
       </el-header>
@@ -72,25 +71,19 @@ export default {
             path: '/home/teacher/read'
           }
         )
-      } else if (key === '2') {
-        this.$router.push(
-          {
-            path: '/home/teacher/toggle'
-          }
-        )
-      } else if (key === '3') {
+      }  else if (key === '2') {
         this.$router.push(
           {
             path: '/home/teacher/watch'
           }
         )
-      } else if (key === '4-2') {
+      } else if (key === '3-2') {
         this.$router.push(
           {
             path: '/'
           }
         )
-      } else if (key === '4-1') {
+      } else if (key === '3-1') {
         this.$router.push(
           {
             path: '/home/teacher/operation'

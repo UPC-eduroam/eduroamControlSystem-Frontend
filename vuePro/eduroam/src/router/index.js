@@ -5,7 +5,6 @@ import Home from '../pages/components/main/home'
 import Student from '../pages/components/main/student'
 import Teacher from '../pages/components/main/teacher'
 import Readmes from '../pages/components/main/components/readMes'
-import Togglebutton from '../pages/components/main/components/toggleButton'
 import Watchlist from '../pages/components/main/components/watchList'
 import Operation from '../pages/components/main/components/operationRecord'
 
@@ -35,10 +34,6 @@ export default new Router({
           path: '/home/teacher',
           component: Teacher,
           children: [
-            {
-              path: '/home/teacher/toggle',
-              component: Togglebutton
-            },
             {
               path: '/home/teacher/read',
               component: Readmes

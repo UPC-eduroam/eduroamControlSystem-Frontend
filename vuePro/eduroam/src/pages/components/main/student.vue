@@ -10,11 +10,37 @@
                 <li class="intro">欢迎使用eduroam</li>
                 <li>姓名: {{getName}}</li>
                 <li>登入时间: {{time}}</li>
+                <li>
+                  <el-button type="primary" @click="loginOut">登出</el-button>
+                </li>
               </ul>
             </div>
           </el-col>
           <el-col :span="9" >
-            <span class="tip" :class="situation==='已提交' ? 'submit' : 'yet'">{{situation}}</span>
+            <div class="tip">
+              <el-alert
+              title="申请通过"
+              type="success"
+              show-icon
+              v-if="pass"
+              >
+              </el-alert>
+              <el-alert
+                title="申请未通过"
+                type="error"
+                show-icon
+                v-if="unpass"
+              >
+              </el-alert>
+              <span class="reason">{{reason}}</span>
+              <el-alert
+                title="你被加入黑名单"
+                type="error"
+                show-icon
+                v-if="black"
+              >
+              </el-alert>
+            </div>
           </el-col>
         </el-row>
         <el-row class="stuForm">
@@ -71,7 +97,10 @@ export default {
         endTime: '',
         desc: ''
       },
-      situation: '未提交',
+      reason: '无未读消息',
+      pass: false,
+      unpass: false,
+      black: false
     }
   },
   created () {
@@ -108,12 +137,12 @@ export default {
   },
   methods: {
     submit () {
-      this.situation = '已提交';
-      console.log(this.form)
     },
     reform () {
-      this.situation = '未提交';
       this.form = {}
+    },
+    loginOut () {
+      this.$router.push('/')
     }
   }
 }
@@ -148,18 +177,21 @@ export default {
       li
         margin 10px 0
   .tip
+    box-sizing border-box
+    padding-top 20px
     margin-left 45px
-    display block
     width 100%
     height 300px
-    line-height 300px
-    text-align center
-    font-size 100px
-    color white
-    &.submit
-      background rgba(154,255,154,0.5)
-    &.yet
-      background rgba(194,194,194,0.5)
+    background rgba(255, 255, 255, 0.2)
+    .reason
+      width 90%
+      height 200px
+      background white
+      display block
+      box-sizing border-box
+      padding 10px
+      margin 0 auto
+      font-size 30px
   .stuForm
     margin-top 40px
     .reason
