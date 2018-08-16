@@ -19,10 +19,19 @@
           <el-col :span="9" >
             <div class="tip">
               <el-alert
+                title="提交成功"
+                type="success"
+                show-icon
+                v-if="sub"
+                style="margin-bottom: 10px"
+              >
+              </el-alert>
+              <el-alert
               title="申请通过"
               type="success"
               show-icon
               v-if="pass"
+              style="margin-bottom: 10px"
               >
               </el-alert>
               <el-alert
@@ -30,6 +39,7 @@
                 type="error"
                 show-icon
                 v-if="unpass"
+                style="margin-bottom: 10px"
               >
               </el-alert>
               <span class="reason">{{reason}}</span>
@@ -38,6 +48,7 @@
                 type="error"
                 show-icon
                 v-if="black"
+                style="margin-bottom: 10px"
               >
               </el-alert>
             </div>
@@ -100,8 +111,31 @@ export default {
       reason: '无未读消息',
       pass: false,
       unpass: false,
-      black: false
+      black: false,
+      sub: false
     }
+  },
+  mounted () {
+    axios.get('http://182.254.133.79:8081/NotificationController/GetAllNotificationsSentToMe',{
+      headers: {
+        Authorization: localStorage.getItem('token')
+      }
+    }).then((data) => {
+      if(!data.data[0].viewed) {
+        this.$http.post('http://182.254.133.79:8081/NotificationController/MarkAsViewed', {
+          notificationId: data.data[0].id
+        }, { emulateJSON: true }).then((data) => {
+          console.log(data)
+        })
+        let mes = data.data[0].message.split(';')
+        if(mes[0]==='agree') {
+          this.pass = true
+        } else {
+          this.unpass = true
+          this.reason = '理由：' + mes[1]
+        }
+      }
+    })
   },
   created () {
     setInterval(function () {
@@ -137,6 +171,28 @@ export default {
   },
   methods: {
     submit () {
+      // axios.post('http://182.254.133.79:8081/NotificationController/CreateNotification',{
+      //   receiver: 'ADMIN',
+      //   message: 'axios测试信息'
+      // },{
+      //   headers: {
+      //     Authorization: localStorage.getItem('token')
+      //   }
+      // }).then((data) => {
+      //   console.log(data)
+      // }).catch((e) => {
+      //   console.log(e)
+      // })
+      this.$http.post('http://182.254.133.79:8081/NotificationController/CreateNotification', {
+        receiver: 'ADMIN',
+        message: this.form.reason+';'+this.form.beginTime+';'+this.form.endTime+';'+this.form.desc
+      }, { emulateJSON: true }).then((data) => {
+        if(data.body.state === 0) {
+          this.sub = true
+        }
+      }, (e) => {
+        console.log('error')
+      })
     },
     reform () {
       this.form = {}
@@ -178,7 +234,6 @@ export default {
         margin 10px 0
   .tip
     box-sizing border-box
-    padding-top 20px
     margin-left 45px
     width 100%
     height 300px
@@ -186,7 +241,6 @@ export default {
     .reason
       width 90%
       height 200px
-      background white
       display block
       box-sizing border-box
       padding 10px

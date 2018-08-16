@@ -42,6 +42,7 @@ export default {
       }, { emulateJSON: true }).then((res) => {
         const respond = res.data
         localStorage.setItem('token', respond.token)
+        console.log('token changed')
         localStorage.setItem('userId', respond.user.userId)
         this.isLogin(respond.user)
         if (this.data.userId === 'devUser') {
@@ -56,7 +57,6 @@ export default {
       }, (e) => {
         person.password = ''
         person.username = ''
-        console.log(e)
       })
     },
     resetForm (formName) {

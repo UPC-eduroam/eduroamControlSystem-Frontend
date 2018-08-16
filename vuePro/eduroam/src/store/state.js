@@ -1,3 +1,5 @@
 export default {
-  data: {}
+  data: {},
+  id: 0,
+  user: ''
 }

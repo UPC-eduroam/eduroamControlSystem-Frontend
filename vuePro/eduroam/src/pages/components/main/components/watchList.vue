@@ -20,13 +20,6 @@
         label="状态"
         width="400">
       </el-table-column>
-      <el-table-column
-        label="操作"
-        width="215">
-        <template slot-scope="scope">
-          <el-button @click="handleClick(scope.row)" type="text" size="small">{{mode}}</el-button>
-        </template>
-      </el-table-column>
     </el-table>
   </div>
 </template>
@@ -37,12 +30,7 @@ export default {
   name: 'watchList',
   data () {
     return {
-      tableData: [{
-        number: 1,
-        name: 'john',
-        situation: '异地登录'
-      }],
-      mode: '移入黑名单'
+      tableData: []
     }
   },
   mounted () {
@@ -52,7 +40,7 @@ export default {
     init () {
       const token = localStorage.getItem('token')
       const userId = localStorage.getItem('userId')
-      axios.get('http://182.254.133.79:8081/BlackListController/GetAllUsersFromBlacklist', {
+      axios.get('http://182.254.133.79:8081/BlackListController/GetAllUsersFromBlacklist?userId=devAdmin', {
         params: {
           userId: userId
         },
@@ -62,19 +50,6 @@ export default {
       }).then(res => {
         console.log(res.data)
         this.tableData = res.data
-      })
-    },
-    handleClick (data) {
-      axios.post('http://182.254.133.79:8081/BlackListController/DeleteUserFromBlackList', {
-        userId: localStorage.getItem('userId'),
-        objectId: data.number
-      }, {
-        headers: {
-          Authorization: localStorage.getItem('token')
-        }
-      }).then(res => {
-        console.log(res)
-        this.init()
       })
     }
   }

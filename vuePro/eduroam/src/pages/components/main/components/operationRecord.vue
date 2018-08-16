@@ -21,14 +21,14 @@
       </el-row>
       <el-table
         :data="data"
-        style="width: 100%; margin-top: 20px">
+        style="width: 100%; margin-top: 20px; height: 700px; overflow: auto">
         <el-table-column
           prop="operatingTime"
           label="修改日期"
           width="180">
         </el-table-column>
         <el-table-column
-          prop="adminId"
+          prop="userId"
           label="操作人"
           width="180">
         </el-table-column>
@@ -61,21 +61,18 @@ export default {
       const endTime = this.endTime
       const finalEnd = endTime.getFullYear() + '-' +this.dealDate(endTime.getMonth()+1) + '-' + this.dealDate(endTime.getDate())
       const finalBegin = beginTime.getFullYear() + '-' +this.dealDate(beginTime.getMonth()+1) + '-' + this.dealDate(beginTime.getDate())
-      axios.get('http://182.254.133.79:8081/AdminOperationLogController/GetAdminOperationLogsByAdminIdAndDate',
+      axios.get('http://182.254.133.79:8081/UserUsageLogController/GetUserUsageLogsByUserIdAndDate',
         {
           params: {
+            Authorization: token,
             userId: currentId,
             objectId: findId,
             startDate: finalBegin,
             endDate: finalEnd
-          },
-          headers: {
-            Authorization: token
           }
         }
       ).then(res => {
         this.data = res.data
-        console.log(this.data)
       }).catch(e => {
         console.log(e)
       })

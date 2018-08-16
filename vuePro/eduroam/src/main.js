@@ -13,6 +13,11 @@ Vue.use(Element)
 Vue.use(Resource)
 Vue.config.productionTip = false
 
+Vue.http.options.emulateHTTP = true
+Vue.http.options.headers = {
+  'Authorization': localStorage.getItem('token')
+}
+
 router.beforeEach((to, from, next) => {
   if (to.meta.requireAuth) {
     if(!isEmptyObject(store.state.data)) {
