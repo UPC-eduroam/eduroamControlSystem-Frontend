@@ -77,8 +77,8 @@ export default {
       this.$http.post('http://182.254.133.79:8081/NotificationController/MarkAsViewed', {
         notificationId: row.id
       }, { emulateJSON: true }).then((data) => {
-        this.init()
         console.log(data)
+        this.init()
       })
       let messArray = row.message.split(';')
       let beginTime = messArray[1].split(' ')[3]+'--'+messArray[1].split(' ')[1]+'--'+messArray[1].split(' ')[2]
@@ -100,9 +100,9 @@ export default {
     },
     rowClass (row, rowIndex) {
       if (row.row.viewed) {
-        return {'background-color': 'oldlace'}
+        return {'background-color': ' #FFFFE0'}
       } else {
-        return {'background-color': '#f0f9eb'}
+        return {'background-color': '  #98FB98'}
       }
     },
     agree () {
