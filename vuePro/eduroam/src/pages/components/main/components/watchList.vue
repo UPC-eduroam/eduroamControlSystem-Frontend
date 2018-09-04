@@ -6,19 +6,17 @@
       stripe
       :row-style="rowClass">
       <el-table-column
-        prop="number"
+        prop="userId"
         label="学号"
         width="400">
       </el-table-column>
       <el-table-column
-        prop="name"
-        label="姓名"
-        width="400">
-      </el-table-column>
-      <el-table-column
         prop="situation"
-        label="状态"
+        label="操作"
         width="400">
+        <template slot-scope="scope">
+          <el-button @click="handleClick(scope.row)" type="text" size="small">删除</el-button>
+        </template>
       </el-table-column>
     </el-table>
   </div>
@@ -45,11 +43,22 @@ export default {
           userId: userId
         },
         headers: {
-          Authorization: token,
+          Authorization: token
         }
       }).then(res => {
-        console.log(res.data)
         this.tableData = res.data
+      }).catch((e) => {
+        console.log(e)
+      })
+    },
+    handleClick (row) {
+      console.log(row)
+      this.$http.post('http://182.254.133.79:8081/BlackListController/DeleteUserFromBlackList', {
+        objectId: row.userId
+      }, { emulateJSON: true }).then((data) => {
+        this.init()
+      }, (e) => {
+        console.log('error')
       })
     }
   }

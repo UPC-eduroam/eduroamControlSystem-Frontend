@@ -64,7 +64,6 @@ export default {
       })
     },
     handleClick (row) {
-      console.log(row)
       // axios.post('http://182.254.133.79:8081/NotificationController/MarkAsViewed', {
       //   notificationId: row.id
       // }, {
@@ -77,13 +76,12 @@ export default {
       this.$http.post('http://182.254.133.79:8081/NotificationController/MarkAsViewed', {
         notificationId: row.id
       }, { emulateJSON: true }).then((data) => {
-        console.log(data)
         this.init()
       })
       let messArray = row.message.split(';')
       let beginTime = messArray[1].split(' ')[3]+'--'+messArray[1].split(' ')[1]+'--'+messArray[1].split(' ')[2]
       let endTime = messArray[2].split(' ')[3]+'--'+messArray[2].split(' ')[1]+'--'+messArray[2].split(' ')[2]
-      this.mes ='理由:  '+ messArray[0] + ('\n') + '时间段:  ' + beginTime + '——' + endTime + ('\n') + '备注:  '+ messArray[3]
+      this.mes ='编号:' + row.id + ('\n') + '理由:  '+ messArray[0] + ('\n') + '时间段:  ' + beginTime + '——' + endTime + ('\n') + '备注:  '+ messArray[3]
       this.changeId(row.id)
       this.changeUser(row.sender)
     },
@@ -91,7 +89,6 @@ export default {
       this.$http.post('http://182.254.133.79:8081/NotificationController/DeleteNotification', {
         notificationId: row.id
       }, { emulateJSON: true }).then((data) => {
-        console.log(data)
         if(data.body.state === 0) {
           this.init()
         }

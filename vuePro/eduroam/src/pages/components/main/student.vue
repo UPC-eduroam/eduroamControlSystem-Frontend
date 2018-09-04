@@ -12,8 +12,27 @@
                 <li>登入时间: {{time}}</li>
                 <li>
                   <el-button type="primary" @click="loginOut">登出</el-button>
+                  <el-button type="primary" @click="dialogFormVisible = true">修改密码</el-button>
+                  <el-button type="primary" @click="bindMail" style="margin-top: 10px">绑定邮箱</el-button>
                 </li>
               </ul>
+              <el-dialog title="修改密码" :visible.sync="dialogFormVisible">
+                <el-form :model="changePwdForm">
+                  <el-form-item label="原密码" :label-width="formLabelWidth">
+                    <el-input v-model="changePwdForm.oldPassword" auto-complete="off"></el-input>
+                  </el-form-item>
+                  <el-form-item label="新密码" :label-width="formLabelWidth">
+                    <el-input v-model="changePwdForm.newPassword" auto-complete="off"></el-input>
+                  </el-form-item>
+                  <el-form-item label="确认新密码" :label-width="formLabelWidth">
+                    <el-input v-model="changePwdForm.confirmNewPassword" auto-complete="off"></el-input>
+                  </el-form-item>
+                </el-form>
+                <div slot="footer" class="dialog-footer">
+                  <el-button @click="dialogFormVisible = false">取 消</el-button>
+                  <el-button type="primary" @click="changePwd">确 定</el-button>
+                </div>
+              </el-dialog>
             </div>
           </el-col>
           <el-col :span="9" >
@@ -112,7 +131,14 @@ export default {
       pass: false,
       unpass: false,
       black: false,
-      sub: false
+      sub: false,
+      dialogFormVisible: false,
+      changePwdForm: {
+        oldPassword: '',
+        newPassword: '',
+        confirmNewPassword: ''
+      },
+      formLabelWidth: '120px'
     }
   },
   mounted () {
@@ -199,6 +225,38 @@ export default {
     },
     loginOut () {
       this.$router.push('/')
+    },
+    changePwd () {
+      this.$http.post('http://182.254.133.79:8081/UserController/ResetPassword', {
+        oldPassword: this.changePwdForm.oldPassword,
+        newPassword: this.changePwdForm.newPassword,
+        confirmNewPassword: this.changePwdForm.confirmNewPassword
+      }, {emulateJSON: true}).then((data) => {
+        console.log(data)
+        this.dialogFormVisible = false
+      })
+    },
+    bindMail () {
+      this.$prompt('请输入邮箱', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        inputPattern: /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/,
+        inputErrorMessage: '邮箱格式不正确'
+      }).then(({ value }) => {
+        this.$http.post('http://182.254.133.79:8081/UserController/BindEmail', {
+          emailAddress: value
+        }, {emulateJSON: true}).then((data) => {
+          this.$message({
+            type: 'info',
+            message: '邮箱绑定成功'
+          })
+        })
+      }).catch(() => {
+        this.$message({
+          type: 'info',
+          message: '取消输入'
+        })
+      })
     }
   }
 }
