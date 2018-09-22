@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abc2e2dc-ab2e-4bde-a38c-1245d2f61dc0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue" afterDir="false" />
-    </list>
+    <list default="true" id="abc2e2dc-ab2e-4bde-a38c-1245d2f61dc0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,61 +14,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="teacher.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue">
+      <file leaf-file-name="home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="15" column="89" lean-forward="true" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
-              <folding>
-                <element signature="n#style#0;n#el-submenu#0;n#el-menu#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="watchList.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="student.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="76" />
+            <state relative-caret-position="264">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
+                <element signature="n#style#0;n#el-button#0;n#div#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-button#2;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-alert#0;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-alert#2;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-alert#3;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#el-row#1;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#el-alert#0;n#div#0;n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-alert#3;n#div#0;n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#el-col#0;n#el-row#1;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#script#0;n#!!top" />
+                <element signature="e#5748#6288#0" />
+                <element signature="e#6004#6040#0" />
+                <element signature="e#6304#6711#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readMes.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue">
+      <file leaf-file-name="mainPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/mainPage/mainPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+            <state relative-caret-position="792">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/login/login.vue">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loginPage/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/mainPage/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/mainPage/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-3.3.1.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins-dev/jquery-3.3.1.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -100,7 +130,7 @@
       <list>
         <option value="$PROJECT_DIR$/html/LoginPage/login.html" />
         <option value="$PROJECT_DIR$/css/loginPage/login.css" />
-        <option value="$USER_HOME$/Desktop/插件/JoelBesada-scrollpath/index.html" />
+        <option value="$PROJECT_DIR$/../../插件/JoelBesada-scrollpath/index.html" />
         <option value="$PROJECT_DIR$/plugins-dev/jquery-scroll-path/style.css" />
         <option value="$PROJECT_DIR$/plugins-dev/jquery-scroll-path/demo.js" />
         <option value="$PROJECT_DIR$/css/mainPage/mainNav.css" />
@@ -128,7 +158,6 @@
         <option value="$PROJECT_DIR$/vuePro/eduroam/data.json" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/home.vue" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/store/index.js" />
-        <option value="$PROJECT_DIR$/vuePro/eduroam/config/index.js" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/config/res.js" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/router/index.js" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/store/state.js" />
@@ -138,8 +167,9 @@
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/login/login.vue" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue" />
-        <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue" />
         <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue" />
+        <option value="$PROJECT_DIR$/vuePro/eduroam/config/index.js" />
+        <option value="$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue" />
       </list>
     </option>
   </component>
@@ -157,68 +187,100 @@
       <path value="$PROJECT_DIR$/vuePro/eduroam/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="143" />
-    <option name="y" value="260" />
-    <option name="width" value="1314" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-124" />
+    <option name="y" value="10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="mainPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="loginPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="mainPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="loginPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="vuePro" type="462c0819:PsiDirectoryNode" />
-              <item name="eduroam" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="vuePro" type="462c0819:PsiDirectoryNode" />
-              <item name="eduroam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -226,8 +288,8 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -236,8 +298,8 @@
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -246,8 +308,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -257,35 +319,40 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="eduroamControlSystem-Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eduroamControlSystem-Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eduroamControlSystem-Frontend-master" type="462c0819:PsiDirectoryNode" />
               <item name="vuePro" type="462c0819:PsiDirectoryNode" />
               <item name="eduroam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -313,10 +380,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.mainPage.html">
+  <component name="RunManager" selected="npm.Unnamed">
     <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/eduroamControlSystem-Frontend/html/loginPage/login.html" />
     <configuration name="mainPage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/eduroamControlSystem-Frontend/html/mainPage/mainPage.html" />
+    <configuration name="Unnamed" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/vuePro/eduroam/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/vuePro/eduroam/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <list>
+      <item itemvalue="npm.Unnamed" />
       <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.mainPage.html" />
     </list>
@@ -366,26 +452,34 @@
       <workItem from="1534562507716" duration="76000" />
       <workItem from="1534815061730" duration="252000" />
       <workItem from="1536068399038" duration="3720000" />
+      <workItem from="1537086895231" duration="3163000" />
+      <workItem from="1537409387257" duration="1211000" />
+      <workItem from="1537411106259" duration="37000" />
+      <workItem from="1537418893899" duration="4652000" />
+      <workItem from="1537498318473" duration="200000" />
+      <workItem from="1537498551349" duration="1574000" />
+      <workItem from="1537525099098" duration="598000" />
+      <workItem from="1537538774749" duration="2038000" />
+      <workItem from="1537577096096" duration="8047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126711000" />
+    <option name="totallyTimeSpent" value="151244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-99" y="8" width="1552" height="882" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14541623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1983095" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50276244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33764833" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.033854168" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -421,15 +515,67 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins-dev/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="89" lean-forward="true" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/login/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins-dev/jquery-scroll-path/demo.js" />
     <entry file="file://$PROJECT_DIR$/css/mainPage/mainNav.css" />
-    <entry file="file://$PROJECT_DIR$/static/img/mainPage/mainBackground.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mainPage/wrapperOne.css" />
-    <entry file="file://$PROJECT_DIR$/css/font/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/font/iconfont.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -441,16 +587,10 @@
     <entry file="file://$PROJECT_DIR$/css/mainPage/info.css" />
     <entry file="file://$PROJECT_DIR$/css/mainPage/mainWrapper.css" />
     <entry file="file://$PROJECT_DIR$/static/img/mainPage/right.jpg" />
-    <entry file="file://$USER_HOME$/Desktop/I/bootstrap/bootstrap.min.css" />
-    <entry file="file://$USER_HOME$/Desktop/I/less/boot.html" />
-    <entry file="file://$PROJECT_DIR$/css/mainPage/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../I/bootstrap/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/../../I/less/boot.html" />
     <entry file="file://$PROJECT_DIR$/plugins-dev/bootstrap.min.js" />
     <entry file="file://$PROJECT_DIR$/plugins-dev/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/static/img/mainPage/forbbden.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mainPage/boot.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -458,38 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/loginPage/user.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/loginPage/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/loginPage/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mainPage/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mainPage/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -501,21 +613,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/build/logo.png" />
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/login/imgs/loginBackground.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/static/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/loginPage/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/mainPage/header.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/data.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -525,40 +628,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/imgs/mainBackground.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/img/mainPage/right.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/mainPage/Sky.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/mainPage/mainPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mainPage/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -566,28 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/config/res.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/toggleButton.vue" />
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -609,65 +657,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/operationRecord.vue">
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        <state relative-caret-position="504">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/main.js">
+    <entry file="file://$PROJECT_DIR$/html/loginPage/user.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="24">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/loginPage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/config/res.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/login/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        <state relative-caret-position="-1550">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/operationRecord.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1334">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/readMes.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="-1598">
           <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/components/watchList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+        <state relative-caret-position="-14">
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loginPage/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mainPage/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mainPage/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins-dev/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/mainPage/mainPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/student.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="76" />
+        <state relative-caret-position="264">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
+            <element signature="n#style#0;n#el-button#0;n#div#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-button#2;n#li#3;n#ul#0;n#div#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-alert#0;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-alert#2;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-alert#3;n#div#0;n#el-col#1;n#el-row#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#el-row#1;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuePro/eduroam/src/pages/components/main/teacher.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="15" column="89" lean-forward="true" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#el-submenu#0;n#el-menu#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#el-alert#0;n#div#0;n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-alert#3;n#div#0;n#el-col#0;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#el-col#0;n#el-row#1;n#el-main#0;n#el-container#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#script#0;n#!!top" />
+            <element signature="e#5748#6288#0" />
+            <element signature="e#6004#6040#0" />
+            <element signature="e#6304#6711#0" />
           </folding>
         </state>
       </provider>
